@@ -1,9 +1,113 @@
-<html lang='en'>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <title>Publications</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+.sidenav {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.main {
+    margin-left: 220px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+	
+.column0 {
+    float: left;
+    width: 35%;
+    padding: 5px;
+}
+	
+.column00 {
+    float: left;
+    width: 45%;
+    padding: 5px;
+}
+	
+.column1 {
+    float: left;
+    width: 60%;
+    padding: 5px;
+}
+.column2 {
+    float: left;
+    width: 39%;
+    padding: 5px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
 </head>
 <body>
+
+<div class="sidenav">
+  <a href="/">Shounak Datta<br><br></a>
+  <a href="/">Home</a>
+  <a href="/edu.html">Education</a>
+  <a href="/areas.html">Research Areas</a>
+  <a href="/pubs.html">Publications</a>
+  <center>
+
+      <div class="column0">
+      <a href="https://github.com/Shounak-D">
+	  <img src="gitlogo.png" alt="Go to my GitHub profile." style="margin-left:35px;" width="30" height="30" border="0">
+      </a>
+      </div>
+      
+      <div class="column">
+      <a href="mailto:shounak.jaduniv@gmail.com">
+	  <img src="maillogo.png" alt="Send me an email." height="30" border="0">
+      </a>
+      </div>
+      
+      <div class="column00">
+      <a href="https://scholar.google.co.in/citations?user=qtW4ugoAAAAJ">
+	  <img src="scholarlogo.png" alt="Go to my Google Scholar page." style="margin-right:75px;" height="30" border="0">
+      </a>
+      </div>
+      
+      <p><a style="font-size:14px"> &copy; 2018. All rights reserved.</a></p>
+  </center>
+  
+</div>
+
+<div class="main">
+    <h2>Publications</h2>
     <ul>
     <li>Journal Articles</li>
          <ul>
@@ -24,5 +128,7 @@
          <li>Banerjee, Anwesha, Shounak Datta, Pratyusha Das, Amit Konar, D. N. Tibarewala, and R. Janarthanan. "Electrooculogram based online control signal generation for wheelchair." Electronic System Design (ISED), 2012 International Symposium on. IEEE, 2012.</li>
          <li>Banerjee, Anwesha, Pratyusha Das, Shounak Datta, Amit Konar, R. Janarthanan, and D. N. Tibarewala. "Real time electro-oculogram driven rehabilitation aid." Proceedings of International Conference on Advances in Computing. Springer, New Delhi, 2013.</li>
     </ul>
+    
+    </div>
 </body>
 </html>
